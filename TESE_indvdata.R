@@ -167,8 +167,8 @@ visIgraph(redesig)
 ###### Predicted both ######
 ####################################### Paralell Processing #################################### 
 
-clust <- parallel::makePSOCKcluster(4) # cria as cópias do R que rodam em paralelo
-doParallel::registerDoParallel(clust) #define number of threads that will be used during analysis process
+clust <- parallel::makePSOCKcluster(4) 
+doParallel::registerDoParallel(clust) 
 #clusterStop(clust) #parar o processamento paralelo
 
 ####################################### BOOT #######################################################################
